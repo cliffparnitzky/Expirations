@@ -10,12 +10,12 @@
  * modify it under the terms of the GNU Lesser General Public
  * License as published by the Free Software Foundation, either
  * version 3 of the License, or (at your option) any later version.
- * 
+ *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
  * Lesser General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU Lesser General Public
  * License along with this program. If not, please visit the Free
  * Software Foundation website at <http://www.gnu.org/licenses/>.
@@ -23,17 +23,20 @@
  * PHP version 5
  * @copyright  Cliff Parnitzky 2012
  * @author     Cliff Parnitzky
- * @package    expirations
+ * @package    Expirations
  * @license    LGPL
- * @filesource
  */
 
 /**
- * Define name and tooltip for preferences (inactive modules)
+ * Legends
  */
-$GLOBALS['TL_LANG']['MOD']['expirations']             = 'Expiring ... articles, pages, etc.';
-$GLOBALS['TL_LANG']['MOD']['expiration']              = 'Expiring ...';
-$GLOBALS['TL_LANG']['MOD']['expiringArticles']        = array('Expiring articles', 'Displays a list of expiring articles, ordered by date of "Show until".');
-$GLOBALS['TL_LANG']['MOD']['expiringPages']           = array('Expiring pages', 'Displays a list of expiring pages, ordered by date of "Show until".');
+$GLOBALS['TL_LANG']['tl_user']['expirationsConfig'] = array('Settings for expiring ... pages, articles, etc.', 'Specify the settings for each backend module.');
+$GLOBALS['TL_LANG']['tl_user']['expirationModule']  = array('Backend module');
+$GLOBALS['TL_LANG']['tl_user']['maxDays']           = array('Maximum number of displayed days');
+
+/**
+ * Legends
+ */
+$GLOBALS['TL_LANG']['tl_user']['expirations_legend'] = 'Expiring ... pages, articles, etc.';
 
 ?>

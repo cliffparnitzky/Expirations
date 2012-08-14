@@ -10,12 +10,12 @@
  * modify it under the terms of the GNU Lesser General Public
  * License as published by the Free Software Foundation, either
  * version 3 of the License, or (at your option) any later version.
- * 
+ *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
  * Lesser General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU Lesser General Public
  * License along with this program. If not, please visit the Free
  * Software Foundation website at <http://www.gnu.org/licenses/>.
@@ -23,34 +23,20 @@
  * PHP version 5
  * @copyright  Cliff Parnitzky 2012
  * @author     Cliff Parnitzky
- * @package    expirations
+ * @package    Expirations
  * @license    LGPL
- * @filesource
  */
- 
-// Configure backend module and tables
-$GLOBALS['TL_EXPIRATION']['expiringArticles'] = array
-(
-	'table'     => 'tl_article',
-	'icon'      => 'system/modules/expirations/html/icon.png',
-	'maxDays'   => 10
-);
-$GLOBALS['TL_EXPIRATION']['expiringPages'] = array
-(
-	'table'     => 'tl_page',
-	'icon'      => 'system/modules/expirations/html/icon.png',
-	'maxDays'   => 10
-);
-	
+
 /**
- * Adding backend modules
+ * Legends
  */
-foreach ($GLOBALS['TL_EXPIRATION'] as $expiration => $config) {
-	$GLOBALS['BE_MOD']['expiration'][$expiration] = array
-	(
-		'tables' => array('tl_expiration'),
-		'icon'   => $config['icon']
-	);
-}
+$GLOBALS['TL_LANG']['tl_user']['expirationsConfig'] = array('Einstellungen für ablaufende ... Seiten, Artikel, usw.', 'Legen Sie die Einstellungen für die einzelnen Backend Module fest.');
+$GLOBALS['TL_LANG']['tl_user']['expirationModule']  = array('Backend Modul');
+$GLOBALS['TL_LANG']['tl_user']['maxDays']           = array('Anzahl maximal anzuzeigender Tage');
+
+/**
+ * Legends
+ */
+$GLOBALS['TL_LANG']['tl_user']['expirations_legend'] = 'Ablaufende ... Seiten, Artikel, usw.';
 
 ?>
