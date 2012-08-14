@@ -7,10 +7,10 @@ Displays lists of expiring pages, article, ...
 Installation
 ------------
 
-The extension is not published in contao extension repository.
-Install it manually.
+The extension can be installed using the Contao extension manager in the Contao
+back end. If you prefer to install it manually, download the files here:
 
-Attention: This extension depends on 'DC_DynamicTable'.
+http://www.contao.org/en/extension-list/view/Expirations.en.html
 
 
 Tracker
