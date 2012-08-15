@@ -64,9 +64,11 @@ class tl_expiration extends Backend
 		$this->import("BackendUser", "User");
 		
 		$maxDays = 30;
-		foreach($this->User->expirationsConfig as $k=>$config) {
-			if ($config['expirationModule'] == $virtualTable && intval($config['maxDays']) > 0) {
-				$maxDays = intval($config['maxDays']);
+		if ($this->User->expirationsConfig != null) {
+			foreach($this->User->expirationsConfig as $k=>$config) {
+				if ($config['expirationModule'] == $virtualTable && intval($config['maxDays']) > 0) {
+					$maxDays = intval($config['maxDays']);
+				}
 			}
 		}
 		

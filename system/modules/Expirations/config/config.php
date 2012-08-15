@@ -47,8 +47,7 @@ $GLOBALS['TL_EXPIRATION']['expiringPages'] = array
 );
 $GLOBALS['TL_EXPIRATION']['expiringArticles'] = array
 (
-	'table'      => 'tl_article',
-	'icon'       => 'system/modules/expirations/html/expiringArticles.png'
+	'table'      => 'tl_article'
 );
 $GLOBALS['TL_EXPIRATION']['expiringContentElements'] = array
 (
@@ -83,10 +82,10 @@ foreach ($GLOBALS['TL_EXPIRATION'] as $expiration => $config) {
 	if ($addToBackendModules) {
 		$icon = $config['icon'];
 		if (strlen($icon) == 0) {
-			$icon = 'system/modules/expirations/html/' . $expiration . '.png';
+			$icon = 'system/modules/Expirations/html/' . $expiration . '.png';
 		}
 		if (!file_exists(TL_ROOT . "/" . $icon)) {
-			$icon = 'system/modules/expirations/html/hourglas.png';
+			$icon = 'system/modules/Expirations/html/hourglas.png';
 		}
 		
 		$GLOBALS['BE_MOD']['expiration'][$expiration] = array
