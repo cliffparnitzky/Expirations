@@ -1,5 +1,5 @@
 Contao Expirations Extension
-========================================================
+============================
 
 Displays lists of expiring pages, article, ...
 
@@ -17,3 +17,10 @@ Tracker
 -------
 
 https://github.com/cliffparnitzky/Expirations/issues
+
+
+Compatibility
+-------------
+
+- min. version: Contao 2.9.5
+- max. version: Contao 2.11.6
