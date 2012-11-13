@@ -24,3 +24,9 @@ Compatibility
 
 - min. version: Contao 2.9.5
 - max. version: Contao 2.11.6
+
+
+Dependency
+----------
+
+- This extension is dependent on the following extensions: [[DC_DynamicTable]](http://contao.org/de/extension-list/view/DC_DynamicTable.de.html), [[MultiColumnWizard]](http://contao.org/de/extension-list/view/MultiColumnWizard.de.html)
